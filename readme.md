@@ -5,7 +5,7 @@
 
 ## Install
 
-```sh
+```
 $ npm install --save callsites
 ```
 
@@ -13,11 +13,11 @@ $ npm install --save callsites
 ## Usage
 
 ```js
-var callsites = require('callsites');
+const callsites = require('callsites');
 
 function unicorn() {
 	console.log(callsites()[0].getFileName());
-	//=> /Users/sindresorhus/dev/callsites/test.js
+	//=> '/Users/sindresorhus/dev/callsites/test.js'
 }
 
 unicorn();
