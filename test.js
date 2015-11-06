@@ -1,8 +1,8 @@
-'use strict';
-var assert = require('assert');
-var path = require('path');
-var callsites = require('./');
+import test from 'ava';
+import path from 'path';
+import fn from './';
 
-it('should get the callsites', function () {
-	assert.strictEqual(path.basename(callsites()[0].getFileName()), 'test.js');
+test('callsites', t => {
+	t.is(path.basename(fn()[0].getFileName()), 'test.js');
+	t.end();
 });
