@@ -1,6 +1,6 @@
 # callsites [![Build Status](https://travis-ci.org/sindresorhus/callsites.svg?branch=master)](https://travis-ci.org/sindresorhus/callsites)
 
-> Get callsites from the [V8 stack trace API](https://code.google.com/p/v8/wiki/JavaScriptStackTraceApi)
+> Get callsites from the [V8 stack trace API](https://github.com/v8/v8/wiki/Stack-Trace-API)
 
 
 ## Install
