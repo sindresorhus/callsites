@@ -1,6 +1,6 @@
 {
   "name": "callsites",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get callsites from the V8 stack trace API",
   "license": "MIT",
   "repository": "sindresorhus/callsites",
