@@ -23,6 +23,7 @@ function unicorn() {
 unicorn();
 ```
 
+
 ## API
 
 Returns an array of callsite objects with the following methods:
@@ -34,7 +35,7 @@ Returns an array of callsite objects with the following methods:
 - `getLineNumber`: if this function was defined in a script returns the current line number
 - `getColumnNumber`: if this function was defined in a script returns the current column number
 - `getEvalOrigin`: if this function was created using a call to eval returns a CallSite object representing the location where eval was called
-- `isToplevel`: is this a toplevel invocation, that is, is this the global object?
+- `isToplevel`: is this a top-level invocation, that is, is this the global object?
 - `isEval`: does this call take place in code defined by a call to eval?
 - `isNative`: is this call in native V8 code?
 - `isConstructor`: is this a constructor call?
@@ -42,4 +43,4 @@ Returns an array of callsite objects with the following methods:
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)

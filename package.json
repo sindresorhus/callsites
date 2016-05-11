@@ -7,10 +7,10 @@
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
-    "url": "http://sindresorhus.com"
+    "url": "sindresorhus.com"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=0.10"
   },
   "scripts": {
     "test": "xo && ava"
@@ -19,10 +19,10 @@
     "index.js"
   ],
   "keywords": [
-    "callsites",
-    "callsite",
-    "v8",
     "stacktrace",
+    "v8",
+    "callsite",
+    "callsites",
     "stack",
     "trace",
     "function",
