@@ -27,9 +27,7 @@ unicorn();
 
 Returns an array of callsite objects with the following methods:
 
-- `getThis`: returns the value of this
 - `getTypeName`: returns the type of this as a string. This is the name of the function stored in the constructor field of this, if available, otherwise the object's [[Class]] internal property.
-- `getFunction`: returns the current function
 - `getFunctionName`: returns the name of the current function, typically its name property. If a name property is not available an attempt will be made to try to infer a name from the function's context.
 - `getMethodName`: returns the name of the property of this or one of its prototypes that holds the current function
 - `getFileName`: if this function was defined in a script returns the name of the script
