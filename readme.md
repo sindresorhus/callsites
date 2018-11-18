@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save callsites
+$ npm install callsites
 ```
 
 

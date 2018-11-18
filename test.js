@@ -1,7 +1,7 @@
 import path from 'path';
 import test from 'ava';
-import m from '.';
+import callsites from '.';
 
-test(t => {
-	t.is(path.basename(m()[0].getFileName()), 'test.js');
+test('main', t => {
+	t.is(path.basename(callsites()[0].getFileName()), 'test.js');
 });

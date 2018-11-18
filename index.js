@@ -1,8 +1,9 @@
 'use strict';
+
 module.exports = () => {
-	const _ = Error.prepareStackTrace;
+	const _prepareStackTrace = Error.prepareStackTrace;
 	Error.prepareStackTrace = (_, stack) => stack;
 	const stack = new Error().stack.slice(1);
-	Error.prepareStackTrace = _;
+	Error.prepareStackTrace = _prepareStackTrace;
 	return stack;
 };
