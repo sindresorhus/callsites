@@ -41,9 +41,6 @@ Returns an array of callsite objects with the following methods:
 - `isEval`: does this call take place in code defined by a call to `eval`?
 - `isNative`: is this call in native V8 code?
 - `isConstructor`: is this a constructor call?
-- `isAsync`: is this an async call (i.e. `await` or `Promise.all()`)?
-- `isPromiseAll`: is this an async call to `Promise.all()`?
-- `getPromiseIndex`: returns the index of the promise element that was followed in `Promise.all()` for async stack traces, or `null` if the `CallSite` is not a `Promise.all()` call.
 
 
 ## License
