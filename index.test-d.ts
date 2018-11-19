@@ -1,5 +1,5 @@
 import {expectType} from 'tsd-check';
-import {default as callsites, CallSite} from '.';
+import callsites, {CallSite} from '.';
 
 const callsite = callsites()[0];
 
