@@ -1,5 +1,6 @@
-import {expectType} from 'tsd-check';
-import callsites, {CallSite} from '.';
+import {expectType} from 'tsd';
+import callsites = require('.');
+import {CallSite} from '.';
 
 const callsite = callsites()[0];
 
