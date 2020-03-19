@@ -67,30 +67,23 @@ declare namespace callsites {
 	}
 }
 
-declare const callsites: {
-	/**
-	Get callsites from the V8 stack trace API.
+/**
+Get callsites from the V8 stack trace API.
 
-	@returns An array of `CallSite` objects.
+@returns An array of `CallSite` objects.
 
-	@example
-	```
-	import callsites = require('callsites');
+@example
+```
+import callsites = require('callsites');
 
-	function unicorn() {
-		console.log(callsites()[0].getFileName());
-		//=> '/Users/sindresorhus/dev/callsites/test.js'
-	}
+function unicorn() {
+	console.log(callsites()[0].getFileName());
+	//=> '/Users/sindresorhus/dev/callsites/test.js'
+}
 
-	unicorn();
-	```
-	*/
-	(): callsites.CallSite[];
-
-	// TODO: Remove this for the next major release, refactor the whole definition to:
-	// declare function callsites(): callsites.CallSite[];
-	// export = callsites;
-	default: typeof callsites;
-};
+unicorn();
+```
+*/
+declare function callsites(): callsites.CallSite[];
 
 export = callsites;
