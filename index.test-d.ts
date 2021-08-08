@@ -1,13 +1,12 @@
 import {expectType} from 'tsd';
-import callsites = require('.');
-import {CallSite} from '.';
+import callsites, {CallSite} from './index.js';
 
 const callsite = callsites()[0];
 
 expectType<CallSite[]>(callsites());
 expectType<unknown | undefined>(callsite.getThis());
 expectType<string | null>(callsite.getTypeName());
-expectType<Function | undefined>(callsite.getFunction());
+expectType<(() => void)>(callsite.getFunction());
 expectType<string | null>(callsite.getFunctionName());
 expectType<string | undefined>(callsite.getMethodName());
 expectType<string | null>(callsite.getFileName());

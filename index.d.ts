@@ -13,7 +13,7 @@ declare namespace callsites {
 		/**
 		Returns the current function.
 		*/
-		getFunction(): Function | undefined;
+		getFunction(): () => void;
 
 		/**
 		Returns the name of the current function, typically its `name` property. If a name property is not available an attempt will be made to try to infer a name from the function's context.
@@ -86,4 +86,4 @@ unicorn();
 */
 declare function callsites(): callsites.CallSite[];
 
-export = callsites;
+export default callsites;
