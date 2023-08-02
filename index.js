@@ -8,7 +8,7 @@ export default function callsites() {
 			return callSitesWithoutCurrent;
 		};
 
-		new Error().stack; // eslint-disable-line unicorn/error-message,no-unused-expressions
+		new Error().stack; // eslint-disable-line unicorn/error-message, no-unused-expressions
 		return result;
 	} finally {
 		Error.prepareStackTrace = _prepareStackTrace;
