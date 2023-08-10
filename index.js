@@ -4,7 +4,7 @@ export default function callsites() {
 		let result = [];
 		Error.prepareStackTrace = (_, callSites) => {
 			const callSitesWithoutCurrent = callSites.slice(1);
-			result = callSitesWithoutCurrent
+			result = callSitesWithoutCurrent;
 			return callSitesWithoutCurrent;
 		};
 
