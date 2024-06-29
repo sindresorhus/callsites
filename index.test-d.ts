@@ -16,3 +16,6 @@ expectType<boolean>(callsite.isToplevel());
 expectType<boolean>(callsite.isEval());
 expectType<boolean>(callsite.isNative());
 expectType<boolean>(callsite.isConstructor());
+expectType<boolean>(callsite.isAsync());
+expectType<boolean>(callsite.isPromiseAll());
+expectType<number | null>(callsite.getPromiseIndex());
