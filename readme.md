@@ -40,7 +40,7 @@ Returns an array of callsite objects with the following methods:
 - `isConstructor`: Is this a constructor call?
 - `isAsync()`: 	Returns `true` if this call is asynchronous (i.e. `await`, `Promise.all()`, or `Promise.any()`).
 - `isPromiseAll()`: Returns `true` if this is an asynchronous call to `Promise.all()`.
-- `getPromiseIndex()`: Returns the index of the promise element that was followed in `Promise.all()` or `Promise.any()` for async stack traces, or `null` if the CallSite is not an asynchronous `Promise.all()` or `Promise.any()` call.
+- `getPromiseIndex()`: Returns the index of the promise element that was followed in `Promise.all()` or `Promise.any()` for async stack traces, or `null` if the `CallSite` is not an asynchronous `Promise.all()` or `Promise.any()` call.
 	
 	
 ---
