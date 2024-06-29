@@ -77,7 +77,7 @@ export interface CallSite {
 	isPromiseAll(): boolean;
 
 	/**
-	Returns the index of the promise element that was followed in `Promise.all()` or `Promise.any()` for async stack traces, or `null` if the CallSite is not an asynchronous Promise.all() or Promise.any() call.
+	Returns the index of the promise element that was followed in `Promise.all()` or `Promise.any()` for async stack traces, or `null` if the CallSite is not an asynchronous `Promise.all()` or `Promise.any()` call.
 	*/
 	getPromiseIndex(): number | null;
 }
