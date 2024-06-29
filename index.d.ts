@@ -67,7 +67,7 @@ export interface CallSite {
 	isConstructor(): boolean;
 
 	/**
-	Returns `true` if this call is asynchronous.
+	Returns `true` if this call is asynchronous (i.e. `await`, `Promise.all()`, or `Promise.any()`).
 	*/
 	isAsync(): boolean;
 
